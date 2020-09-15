@@ -197,8 +197,8 @@ button {
 }
 
 .menu-button-cross {
-  position: fixed;
-  top: 8.7%;
+  position: absolute;
+  top: 10%;
   left: 90%;
 }
 
