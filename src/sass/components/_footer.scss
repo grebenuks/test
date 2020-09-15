@@ -1,0 +1,35 @@
+.footer {
+  color: #ffffff;
+  background-color: #111111;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.contacts-container {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+.contacts-block {
+  display: flex;
+  flex-direction: column;
+}
+.contact-title {
+  margin-right: 200px;
+  font-size: 40px;
+  color: #ffffff;
+}
+.company-name {
+  margin-bottom: 20px;
+}
+.contacts-tel {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.contacts-fax {
+  margin-bottom: 20px;
+}
