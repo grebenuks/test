@@ -135,7 +135,6 @@ button {
   background-position: center;
   background-size: cover;
   display: flex;
-  max-width: 1600px;
   position: relative;
   justify-content: space-between;
 }
@@ -169,7 +168,7 @@ button {
 }
 
 .backdrop {
-  width: 700px;
+  width: 40%;
   padding: 150px 50px;
   opacity: 0;
   pointer-events: none;
@@ -186,8 +185,20 @@ button {
 }
 
 .menu-button {
+  opacity: 1;
   position: absolute;
   top: 10%;
+  left: 90%;
+}
+
+.menu-button.is-open {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button-cross {
+  position: fixed;
+  top: 8.7%;
   left: 90%;
 }
 
@@ -195,8 +206,16 @@ button {
   fill: #fff;
 }
 
+.nav-item:hover {
+  outline: black;
+}
+
+.about-section {
+  padding: 40px 0;
+}
+
 .container {
-  padding: 40px;
+  padding: 0 40px;
 }
 
 .overlay {
@@ -220,7 +239,6 @@ button {
 .title-container {
   display: flex;
   flex-direction: column;
-  max-width: 20%;
   text-align: end;
   margin-right: 30px;
   justify-content: flex-end;
@@ -251,7 +269,11 @@ button {
 .footer-container {
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding: 40px 0;
+}
+
+.contact-title-container {
+  margin-right: 50px;
 }
 
 .contacts-container {
@@ -265,7 +287,6 @@ button {
 }
 
 .contact-title {
-  margin-right: 200px;
   font-size: 40px;
   color: #ffffff;
 }
