@@ -6,7 +6,11 @@
 .footer-container {
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding: 40px 0;
+}
+
+.contact-title-container {
+  margin-right: 50px;
 }
 
 .contacts-container {
@@ -18,7 +22,6 @@
   flex-direction: column;
 }
 .contact-title {
-  margin-right: 200px;
   font-size: 40px;
   color: #ffffff;
 }

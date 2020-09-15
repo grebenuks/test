@@ -6,7 +6,6 @@
   background-position: center;
   background-size: cover;
   display: flex;
-  max-width: 1600px;
   position: relative;
   justify-content: space-between;
 }
@@ -40,7 +39,7 @@
 }
 
 .backdrop {
-  width: 700px;
+  width: 40%;
   padding: 150px 50px;
   opacity: 0;
   pointer-events: none;
@@ -56,10 +55,26 @@
 }
 
 .menu-button {
+  opacity: 1;
   position: absolute;
   top: 10%;
   left: 90%;
 }
+.menu-button.is-open {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button-cross {
+  position: fixed;
+  top: 8.7%;
+  left: 90%;
+}
+
 .icon-burger {
   fill: #fff;
+}
+
+.nav-item:hover {
+  outline: black;
 }
