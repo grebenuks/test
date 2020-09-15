@@ -15,7 +15,6 @@ ul {
 
 body {
   font-family: Open Sans, sans-serif;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -128,7 +127,8 @@ button {
 }
 
 .hero {
-  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
   height: 100%;
   background-image: url(/menofproductrgbnov2015.2776ea57.jpg);
   background-repeat: no-repeat;
@@ -206,8 +206,8 @@ button {
   fill: #fff;
 }
 
-.nav-item:hover {
-  outline: black;
+.nav-link:hover {
+  color: #6e7e8f;
 }
 
 .about-section {
@@ -264,16 +264,17 @@ button {
 .footer {
   color: #ffffff;
   background-color: #111111;
+  padding: 40px 0;
 }
 
 .footer-container {
   display: flex;
   justify-content: center;
-  padding: 40px 0;
+  padding-right: 200px;
 }
 
 .contact-title-container {
-  margin-right: 50px;
+  margin-right: 75px;
 }
 
 .contacts-container {
