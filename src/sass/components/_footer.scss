@@ -7,14 +7,23 @@
 
 .footer-container {
   @media screen and (min-width: $tablet) {
-    padding-right: 200px;
+    padding-right: 100px;
     display: flex;
     justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-right: 200px;
+    // display: flex;
+    // justify-content: center;
   }
 }
 
 .contact-title-container {
   margin-right: 5px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 50px;
+  }
 
   @media screen and (min-width: $desktop) {
     margin-right: 75px;
