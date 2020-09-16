@@ -1,6 +1,8 @@
 @import './base/reset';
 @import './base/base';
 
+@import './utils/breakpoints';
+
 @import './components/hero';
 @import './components/about';
 @import './components/footer';

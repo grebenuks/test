@@ -1,7 +1,5 @@
 .hero {
-  max-width: 1600px;
-  margin: 0 auto;
-  height: 100%;
+  height: 100vh;
   background-image: url(/images/menofproductrgbnov2015.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -13,53 +11,88 @@
 
 .hero-description {
   padding-top: 65px;
-  padding-left: 65px;
-  padding-bottom: 45px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 65px;
+    padding-left: 45px;
+    padding-bottom: 25px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 65px;
+    padding-left: 65px;
+    padding-bottom: 45px;
+  }
 }
 
 .logo {
   margin-bottom: 100px;
 }
 
-.hero-title {
-  font-size: 100px;
-  line-height: 110%;
-  color: #fff;
-  margin-bottom: 180px;
-}
-
-.hero-text {
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-}
-
 .nav-menu {
-  font-size: 50px;
   color: #fff;
 }
 
 .backdrop {
-  width: 40%;
-  padding: 150px 50px;
-  opacity: 0;
-  pointer-events: none;
-  background-color: rgba(49, 48, 46, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
   bottom: 0;
-  left: 50%;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(50%);
+  width: 70%;
+  padding: 0 25px;
+  pointer-events: none;
+  background-color: rgba(49, 48, 46, 0.9);
+  // opacity: 0;
+  // transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    background-color: rgba(49, 48, 46, 0.9);
+    justify-content: start;
+    text-align: start;
+    padding: 20px;
+    width: 60%;
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-color: rgba(49, 48, 46, 0.8);
+    justify-content: start;
+    text-align: start;
+    width: 50%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-color: rgba(49, 48, 46, 0.7);
+    padding: 30px;
+    width: 40%;
+  }
 }
+
 .is-open + .backdrop {
-  opacity: 1;
+  transform: translateX(0);
+  display: flex;
   pointer-events: all;
   z-index: 30;
+  // opacity: 1;
+  // transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-button {
   opacity: 1;
   position: absolute;
-  top: 10%;
-  left: 90%;
+  top: 8%;
+  right: 5%;
+
+  @media screen and (min-width: $desktop) {
+    top: 10%;
+    right: 10%;
+  }
 }
 .menu-button.is-open {
   opacity: 0;
@@ -68,14 +101,72 @@
 
 .menu-button-cross {
   position: absolute;
-  top: 10%;
-  left: 90%;
+  top: 8%;
+  right: 7%;
+
+  @media screen and (min-width: $tablet) {
+    top: 8%;
+    right: 10%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 10%;
+    right: 25%;
+  }
 }
 
 .icon-burger {
   fill: #fff;
 }
 
+.nav-link {
+  font-size: 25px;
+  margin-bottom: 35px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 45px;
+  }
+}
+
 .nav-link:hover {
   color: #6e7e8f;
+}
+
+.hero-title {
+  font-size: 50px;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 45vh;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 80px;
+    margin-bottom: 30vh;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    font-size: 70px;
+    margin-bottom: 35vh;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 100px;
+    margin-bottom: 20vh;
+  }
+}
+
+.hero-text {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+  }
 }

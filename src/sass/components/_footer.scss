@@ -2,16 +2,23 @@
   color: #ffffff;
   background-color: #111111;
   padding: 40px 0;
+  text-align: center;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: center;
-  padding-right: 200px;
+  @media screen and (min-width: $tablet) {
+    padding-right: 200px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .contact-title-container {
-  margin-right: 75px;
+  margin-right: 5px;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 75px;
+  }
 }
 
 .contacts-container {
