@@ -401,14 +401,24 @@ button {
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    padding-right: 200px;
+    padding-right: 100px;
     display: flex;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .footer-container {
+    padding-right: 200px;
   }
 }
 
 .contact-title-container {
   margin-right: 5px;
+}
+@media screen and (min-width: 768px) {
+  .contact-title-container {
+    margin-right: 50px;
+  }
 }
 @media screen and (min-width: 1140px) {
   .contact-title-container {
