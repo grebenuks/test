@@ -14,14 +14,20 @@
   padding-left: 15px;
   padding-bottom: 5px;
 
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    // padding-top: 65px;
+    padding-left: 45px;
+    padding-bottom: 15px;
+  }
+
   @media screen and (min-width: $tablet) {
-    padding-top: 65px;
+    // padding-top: 65px;
     padding-left: 45px;
     padding-bottom: 25px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-top: 65px;
+    // padding-top: 65px;
     padding-left: 65px;
     padding-bottom: 45px;
   }
@@ -139,7 +145,7 @@
   font-size: 50px;
   color: #fff;
   line-height: 1.2;
-  margin-bottom: 320px;
+  margin-bottom: 20vh;
 
   @media screen and (min-width: $tablet) {
     font-size: 80px;
